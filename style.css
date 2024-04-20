@@ -1,0 +1,105 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --darkgrey: hsl(0, 0%, 12%);
+  --offblack: hsl(0, 0%, 8%);
+  --black: #141414;
+  --neongreen: #C4F82A;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+
+  background-color: var(--black);
+
+}
+
+.main-container {
+  background-color: var(--darkgrey);
+  border-radius: 12px;
+  padding: 40px;
+  font-size: 14px;
+  font-family: inter;
+
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  
+}
+
+.user-photo {
+  height: 88px;
+  width: 88px; 
+  border-radius: 44px;
+}
+
+.user-name {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.user-location {
+  color: var(--neongreen);
+  font-weight: bold;
+  margin-top: 0px;
+
+}
+
+.user-description {
+  color: white;
+
+}
+
+
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 304px;
+}
+
+button {
+  background-color: var(--grey);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+  cursor: pointer;
+  transition: color .15s,
+  background-color .15s;
+}
+
+button:active,
+button:hover {
+  color: var(--black);
+  background-color: var(--neongreen);
+}
+
+@media (max-width: 500px) {
+  .main-container {
+    padding: 24px;
+  }
+
+  .social-buttons {
+    width: 279px;
+
+  }
+}
