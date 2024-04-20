@@ -21,7 +21,7 @@ body {
 .main-container {
   background-color: var(--darkgrey);
   border-radius: 12px;
-  padding-top: 42px;
+  padding-top: 36px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
@@ -71,7 +71,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   width: 304px;
 }
 
